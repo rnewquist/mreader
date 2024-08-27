@@ -1,0 +1,171 @@
+{
+  "project_info": {
+    "project_number": "182291980784",
+    "firebase_url": "https://mreader-default-rtdb.firebaseio.com",
+    "project_id": "mreader",
+    "storage_bucket": "mreader.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182291980784:android:87544f8ea5826b6164bd35",
+        "android_client_info": {
+          "package_name": "dev.newquist.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182291980784-objh79jqo52mppvl3qlqlum03s32jbv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn_D1idY9WgDwdx2WEr4Cxdoa2uugP1WA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182291980784-1g06sd5tvipbk0morpv95taqcg7hsl9h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "182291980784-b18lp92rricb2aacf68jctfispv70r17.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mreader"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182291980784:android:d1ca6671c9fec4f864bd35",
+        "android_client_info": {
+          "package_name": "dev.newquist.mr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182291980784-objh79jqo52mppvl3qlqlum03s32jbv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn_D1idY9WgDwdx2WEr4Cxdoa2uugP1WA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182291980784-1g06sd5tvipbk0morpv95taqcg7hsl9h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "182291980784-b18lp92rricb2aacf68jctfispv70r17.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mreader"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182291980784:android:135067d10e75505564bd35",
+        "android_client_info": {
+          "package_name": "dev.newquist.mread"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182291980784-objh79jqo52mppvl3qlqlum03s32jbv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn_D1idY9WgDwdx2WEr4Cxdoa2uugP1WA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182291980784-1g06sd5tvipbk0morpv95taqcg7hsl9h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "182291980784-b18lp92rricb2aacf68jctfispv70r17.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mreader"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182291980784:android:40179f46ad4b7fbf64bd35",
+        "android_client_info": {
+          "package_name": "dev.newquist.mreader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182291980784-04vddbadvb218q6bnkmajkseidni1na5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.newquist.mreader",
+            "certificate_hash": "0cba890ad987973f0bebe7cc65bc59a10bcc0a97"
+          }
+        },
+        {
+          "client_id": "182291980784-9tm2ke3ibr9ld98p07kgl24jtlm4p4qv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dev.newquist.mreader",
+            "certificate_hash": "46eb2416a77912d8a98dcfea0a8491ab1daa7004"
+          }
+        },
+        {
+          "client_id": "182291980784-objh79jqo52mppvl3qlqlum03s32jbv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn_D1idY9WgDwdx2WEr4Cxdoa2uugP1WA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "182291980784-1g06sd5tvipbk0morpv95taqcg7hsl9h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "182291980784-b18lp92rricb2aacf68jctfispv70r17.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.mreader"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
