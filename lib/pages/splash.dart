@@ -16,7 +16,7 @@ class SplashPage extends StatelessWidget {
                 children: [
                   FractionallySizedBox(
                       widthFactor: 0.5, child: Image.asset('assets/images/icon.png')),
-                  const Text('mReader', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),)
+                  const Text('mReader', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 40),)
                 ],
               ),),
       ),
