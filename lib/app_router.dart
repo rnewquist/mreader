@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mreader/app_link.dart';
+import 'package:mreader/pages/splash.dart';
 
 class AppRouterDelegate extends RouterDelegate<AppLink> with ChangeNotifier {
   final GlobalKey<NavigatorState> _navKey = GlobalKey();
@@ -14,7 +15,7 @@ class AppRouterDelegate extends RouterDelegate<AppLink> with ChangeNotifier {
               child: Navigator(
             key: _navKey,
             onDidRemovePage: (page) => {},
-            pages: <Widget>[].map(_wrapContentInPage).toList(),
+            pages: <Widget>[const SplashPage()].map(_wrapContentInPage).toList(),
           )),
         ],
       ),
@@ -31,6 +32,7 @@ class AppRouterDelegate extends RouterDelegate<AppLink> with ChangeNotifier {
 
 
 
+  // ignore: unused_element
   bool _handleNavigatorPop(Route<dynamic> route, dynamic result) {
     // Ask the route if it can handle pop internally...
     if (route.didPop(result)) {
