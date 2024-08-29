@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 // ignore: depend_on_referenced_packages
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:mreader/app.dart';
@@ -24,5 +25,6 @@ void main() async {
     return true;
   };
   usePathUrlStrategy();
-  runApp(const App());
+  
+  runApp(const ProviderScope(child: App()));
 }

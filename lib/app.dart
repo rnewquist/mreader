@@ -1,35 +1,17 @@
-import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:mreader/app_router.dart';
+import 'package:mreader/notifiers/app_notifier.dart';
 
-class App extends StatefulWidget {
+class App extends ConsumerWidget {
   const App({super.key});
-
+  final router = AppRouterDelegate();
   @override
-  State<App> createState() => _AppState();
-}
-
-class _AppState extends State<App> {
-  late AppRouterDelegate router;
-  @override
-  void initState() {
-    router = AppRouterDelegate();
-    scheduleMicrotask(() {
-    });
-    super.initState();
-  }
-
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    AppState appState = ref.watch(appProvider);
     return MaterialApp.router(
-      theme: ThemeData(
-        textTheme: GoogleFonts.montserratTextTheme(),
-        useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-            seedColor: Colors.blue,
-            brightness: Brightness.dark)),
+      theme: appState.themeData,
       debugShowCheckedModeBanner: false,
       routerDelegate: router,
       title: 'mReader',

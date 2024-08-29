@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:mreader/app_link.dart';
 import 'package:mreader/pages/splash.dart';
 
-class AppRouterDelegate extends RouterDelegate<AppLink> with ChangeNotifier {
+class AppRouterDelegate extends ConsumerRouterDelegate<AppLink> {
+  AppRouterDelegate(Ref ref) : super(ref);
   final GlobalKey<NavigatorState> _navKey = GlobalKey();
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       body: Column(
         verticalDirection: VerticalDirection.up,
@@ -29,8 +31,6 @@ class AppRouterDelegate extends RouterDelegate<AppLink> with ChangeNotifier {
   bool tryGoBack() {
     return true; //false lets the whole app go into background
   }
-
-
 
   // ignore: unused_element
   bool _handleNavigatorPop(Route<dynamic> route, dynamic result) {
