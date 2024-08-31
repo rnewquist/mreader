@@ -77,4 +77,5 @@ class DefaultFirebaseOptions {
     iosClientId: '182291980784-p46dthndmcivir3nqhet6f6pi6ad3bie.apps.googleusercontent.com',
     iosBundleId: 'dev.newquist.mreader',
   );
+
 }

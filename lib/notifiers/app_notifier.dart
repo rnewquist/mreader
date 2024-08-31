@@ -4,12 +4,10 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 @immutable
 class AppState {
-  final bool showSplash;
   final ThemeData themeData;
-  const AppState({required this.showSplash, required this.themeData});
-  AppState copyWith({bool? showSplash, ThemeData? themeData}) {
+  const AppState({required this.themeData});
+  AppState copyWith({ThemeData? themeData}) {
     return AppState(
-      showSplash: showSplash ?? this.showSplash,
       themeData: themeData ?? this.themeData,
     );
   }
@@ -18,18 +16,27 @@ class AppState {
 class AppNotifier extends Notifier<AppState> {
   @override
   AppState build() {
-    return  AppState(showSplash: true, themeData: ThemeData(
-          textTheme: GoogleFonts.montserratTextTheme(),
+    return AppState(
+      themeData: ThemeData(
+          textTheme: TextTheme(
+            displayLarge: const TextStyle(
+              fontSize: 72,
+              fontWeight: FontWeight.bold,
+            ),
+            titleLarge: GoogleFonts.montserrat(
+              fontSize: 30,
+              fontStyle: FontStyle.italic,
+            ),
+            bodyMedium: GoogleFonts.montserrat(),
+            displaySmall: GoogleFonts.montserrat(),
+          ),
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(
-              seedColor: Colors.blue, brightness: Brightness.dark)),);
-  }
-
-  void toggleShowSplash() {
-    state = state.copyWith(showSplash: !state.showSplash);
+              seedColor: Colors.blue, brightness: Brightness.dark)),
+    );
   }
 }
 
-final appProvider = NotifierProvider<AppNotifier, AppState>(() {
+final appSettings = NotifierProvider<AppNotifier, AppState>(() {
   return AppNotifier();
 });
